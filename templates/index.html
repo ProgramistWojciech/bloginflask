@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}    
+        <h3>Najnowsze wpisy</h3>
+        <hr >
+        <div class="col-md-11 col-lg-12 mx-auto">
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <article class="card mb-4">
+                        <header class="card-header">
+                            <a href="#">
+                                <h4 class="card-title">Flask #1</h4>
+                            </a>
+                        </header>
+                        <a href="#">
+                            <img class="card-img card-img-border" src="{{ url_for('static', filename='IMAG/post instagram.png') }}
+                        " alt="One column Bootstrap blog template">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Opis</p>
+                        </div>
+                    </article><!-- /.card -->
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
+    
